@@ -32,3 +32,14 @@ ANALYSIS = {
     'ejection_fraction_range': (55, 70),  # 正常射血分数范围
     'wall_thickness_range': (5, 10)       # 正常室壁厚度(mm)
 }
+# 增加设备兼容性配置
+DEVICE_PROFILES = {
+    "GE_1.5T": {"TR": 35.0, "TE": 2.5},
+    "Siemens_3T": {"TR": 40.0, "TE": 1.8}
+}
+
+# 添加标准值域
+NORMAL_RANGES = {
+    "lv_ef": (55, 70),     # 左室射血分数正常范围(%)
+    "myo_thickness": 8.0    # 心肌厚度正常值(mm)
+}
