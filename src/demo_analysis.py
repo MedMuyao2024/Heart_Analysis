@@ -58,3 +58,20 @@ def calculate_volume(mask, pixel_size=(1.0, 1.0, 1.0)):
     # pixel_size 参数: (厚度, 高度, 宽度) mm/像素
     voxel_count = np.sum(mask)
     return voxel_count * pixel_size[0] * pixel_size[1] * pixel_size[2]
+# ===== src/demo_analysis.py =====
+from config.imaging_params import PREPROCESSING
+from src.segmentation import UnetModel
+
+def run_analysis():
+    # 加载配置参数
+    print(f"目标图像尺寸: {PREPROCESSING['target_size']}")
+    
+    # 初始化AI模型
+    model = UnetModel(input_shape=(256,256,1))
+    print("✅ 心脏分割模型加载成功")
+
+    # TODO: 添加实际数据处理流程
+    # image = load_dicom("data/sample.dcm")
+
+if __name__ == "__main__":
+    run_analysis()
