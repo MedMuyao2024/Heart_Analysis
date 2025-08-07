@@ -11,7 +11,6 @@
 使用公开数据集：[AMRG Cardiac Atlas](https://www.med.upenn.edu/cbica/amrg-cardiac-atlas/)
 
 
-
 ## 🔄 核心工作流
 ```mermaid
 graph LR
@@ -20,9 +19,9 @@ P --> M[AI心室分割]
 M --> C[射血分数计算]
 C --> R[临床报告]
 
-subgraph src/
-    P --> image_utils.py   # 新增预处理模块
+subgraph 源码模块
+    P --> image_utils.py
     M --> segmentation.py
-    C --> ef_calculator.py # 建议独立计算模块
+    C --> ef_calculator.py
 end
 ```
