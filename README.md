@@ -6,6 +6,11 @@
 - [ ] 心肌异常检测
 - [ ] 血流动力学模拟
 
+##学习日志
+2025年12月23日
+  项目启动。决定将此项目作为我的AI与医学影像学习实验室。
+  初步整理了项目结构，明确了核心目标
+  下一步：开始学习Python基础，并理解‘imaging-params.py’的配置文件作用。
 ## 数据源
 ![AMRG心脏图谱](https://med.upenn.edu/cbica/amrg-cardiac-atlas/logo.png)
 使用公开数据集：[AMRG Cardiac Atlas](https://www.med.upenn.edu/cbica/amrg-cardiac-atlas/)
